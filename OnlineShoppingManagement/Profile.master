@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Customer.Master" AutoEventWireup="true" CodeBehind="Profile.master.cs" Inherits="OnlineShoppingManagement.Profile1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>My Profile</title>
+    <style type="text/css">
+        .auto-style11 {
+            width: 100%;
+            height: 409px;
+        }
+        .auto-style12 {
+            height: 346px;
+        }
+        .auto-style14 {
+            height: 46px;
+        }
+        .auto-style15 {
+            height: 60px;
+        }
+        .auto-style16 {
+            width: 100%;
+            height: 134px;
+        }
+        .auto-style17 {
+            height: 43px;
+        }
+        .auto-style18 {
+            height: 30px;
+        }
+        .auto-style19 {
+            height: 53px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
+    <table class="auto-style11">
+        <tr>
+            <td class="auto-style12" style="vertical-align: top">
+                <table class="auto-style11">
+                    <tr>
+                        <td style="width: 20%">
+                            <table class="auto-style11">
+                                <tr>
+                                    <td style="color: black; text-decoration: none; vertical-align: top; text-align: center" class="auto-style19">Hello,<asp:Label ID="lblMessage" runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black; text-decoration: none; vertical-align: middle; text-align: center" class="auto-style14"><a href="Order.aspx?UT=C" style="color: #000000; text-decoration: none">My Order</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black; text-decoration: none; vertical-align: middle; text-align: center" class="auto-style15"><h2 style="vertical-align: middle; font-size: large">&nbsp;Account</h2>
+                                        <table class="auto-style16">
+                                        <tr>
+                                            <td class="auto-style17"><a href="Profile.aspx" style="color: #000000; text-decoration: none">Profile</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="auto-style18">&nbsp;<a href="Addresses.aspx" style="color: #000000; text-decoration: none">Addresses</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="SavedCards.aspx" style="color: #000000; text-decoration: none">Saved Cards</a></td>
+                                        </tr>
+                                        </table>
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black; text-decoration: none; vertical-align: middle; text-align: center"><a href="SignOut.aspx" style="color: #000000; text-decoration: none">Sign Out</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black; text-decoration: none; vertical-align: middle; text-align: center">
+                                        <asp:LinkButton ID="lbtnDeactivate" runat="server" Font-Underline="False" OnClick="lbtnDeactivate_Click">Deactivate Account</asp:LinkButton>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 80%">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

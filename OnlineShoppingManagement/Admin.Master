@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="OnlineShoppingManagement.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   
+    <title>Shopping Hub</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 68px;
+            border-collapse:collapse;
+        }
+
+        .auto-style2 {
+            width: 100%;
+            height: 52px;
+        }
+        
+        .auto-style4 {
+            width: 100%;
+            height: 30px;
+            border-collapse:collapse;
+        }
+
+        .auto-style8 {
+            text-decoration: none;
+        }
+        .auto-style9 {
+            color: #FFFFFF;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <form id="form1" runat="server">
+    
+        <div style="height: 170px">
+
+            <table class="auto-style1" >
+                <tr>
+                    <td style="background-color: #E01E39; color: #FFFFFF;  width: 2175px;" >&nbsp;<em> <a href="AdminHome.aspx" style="color: #FFFFFF; font-size: large; font-weight: bolder; font-style: italic; font-family: 'Arial Black'; text-decoration: none;">Shopping<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hub</a></em></td>
+                    <td style="background-color: #E01E39; color: #FFFFFF; width: 508px; text-align: center; "  >Hello,<a href="ProfileDetails.aspx?UT=A"  style="text-decoration: none"><asp:Label ID="lblName" runat="server" style="color: #FFFFFF" ></asp:Label></a>
+                    </td>
+                    <td style="background-color: #E01E39; color: #FFFFFF" text-align: right; text-align: center;><a href="SignOut.aspx" class="auto-style8" style="color: #FFFFFF; text-align: right" >SignOut</a></td>
+                </tr>
+            </table>
+
+            <table class="auto-style4">
+                <tr>
+                    <td style="background-color: #F30C3A; color: #FFFFFF; vertical-align: bottom; text-align: center; text-decoration: none;"><strong style="font-size: large; font-weight: bold;"><a href="UserDetails.aspx" class="auto-style8"><span class="auto-style9">View Users</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="auto-style8"><span class="auto-style9">Sales</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AddCategory.aspx" class="auto-style8"><span class="auto-style9"> Add Category</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ViewComplaintFeedBack.aspx?UT=A" class="auto-style8"><span class="auto-style9">View Complaint/Feedback</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="AddPaymentMode.aspx" class="auto-style8"><span class="auto-style9">Add Payment Mode</span></a>&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+                </tr>
+            </table>
+
+            <table class="auto-style2">
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <table class="auto-style2">
+                            <tr>
+                                <td style="text-align: center; color: #FFFFFF; background-color: #E01E39;" >Copyright @ 2020, Shopping Hub, All Rights Reserved<br />
+                                    Designed and Developed by Jatin Kumar</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        </form>
+
+</body>
+</html>

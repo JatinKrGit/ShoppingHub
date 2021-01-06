@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="OnlineShoppingManagement.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Shopping Hub</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 64px;
+            border-collapse:collapse;
+        }
+        .auto-style2 {
+            width: 770px;
+        }
+        .auto-style3 {
+            width: 156px;
+        }
+        .auto-style4 {
+            width: 113px;
+        }
+        .auto-style5 {
+            width: 105px;
+        }
+        .auto-style6 {
+            width: 100%;
+            height: 33px;
+            background-color: #3399FF;
+        }
+        .auto-style7 {
+            width: 100%;
+            height: 82px;
+        }
+        .auto-style8 {
+            width: 100%;
+            background-color: #3399FF;
+        }
+        .auto-style9 {
+            width: 38px;
+            height: 37px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 205px">
+       
+        <table style="text-align:center" class="auto-style1">
+            <tr>
+                <td class="auto-style3" style="background-color: #3399FF; color: #FFFFFF; font-style: oblique; font-size: large; vertical-align: middle; text-align: center; font-weight: bold;"><a href="CustomerHome.aspx?UT=V" style="color: #FFFFFF; text-decoration: none; font-size: large; font-weight: bolder; font-style: italic; font-family: 'Arial Black';">Shopping<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hub</a></td>
+                <td class="auto-style2" style="text-align: center; vertical-align: middle; background-color: #3399FF;">
+                    <asp:TextBox ID="txtSearch" runat="server" style="Width:443px;border-radius:10px;" placeholder=" Search for product,brand and more" BorderStyle="None" ToolTip="Search for product,brand and more"></asp:TextBox>
+                    <asp:Button ID="btnSearch" runat="server" BackColor="#3399FF" BorderColor="#3399FF" BorderStyle="None" ForeColor="White" OnClick="btnSearch_Click1" Text="Search" CausesValidation="False" />
+&nbsp;</td>
+                <td class="auto-style4" style="vertical-align: middle; text-align: center; color: #FFFFFF; background-color: #3399FF;"><a href="Login.aspx" style="color: #FFFFFF; text-decoration: none;">Sign In/Sign Up</a></td>
+                <td class="auto-style5" style="vertical-align: middle; text-align: center; color: #FFFFFF; background-color: #3399FF;"><a href="Order.aspx" style="color: #FFFFFF; text-decoration: none;">Orders</a></td>
+                <td style="vertical-align: middle; text-align: center; color: #FFFFFF; background-color: #3399FF;"><a href="Cart.aspx"style="color: #FFFFFF; text-decoration: none;">Cart<img alt="" class="auto-style9" src="Images/shoppingcart.png" style="border-color: #FFFFFF; vertical-align: middle; text-align: center; line-height: normal; color: #FFFFFF; text-decoration: none;" /></a></td>
+            </tr>
+        </table>
+       
+        <table class="auto-style6">
+            <tr>
+                 <td style="background-color: #0099FF; color: #FFFFFF; vertical-align: bottom; text-align: center;"><strong style="font-size: large; font-weight: bold;"><a href="ElectronicProducts.aspx?UT=V" style="color: #FFFFFF; text-decoration: none"> Electronics</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MenProducts.aspx?UT=V" style="color: #FFFFFF; text-decoration: none"> Men</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="WomenProducts.aspx?UT=V" style="color: #FFFFFF; text-decoration: none"> Women</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="BabyKidsProducts.aspx?UT=V" style="color: #FFFFFF; text-decoration: none"> Baby &amp; Kids</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Selling.aspx?UT=V" style="color: #FFFFFF; text-decoration: none"> Sell</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" style="color: #FFFFFF; text-decoration: none"> Services</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+            </tr>
+        </table>
+        <table class="auto-style7">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                   
+                    </asp:ContentPlaceHolder>
+                    <table class="auto-style8">
+                        <tr>
+                            <td style="border-style: none; border-color: #FFFFFF; color: #FFFFFF; vertical-align: middle; text-align: center; text-decoration: none; background-color: #3399FF;"><a href="AboutUs.aspx?UT=V"style="color: #FFFFFF; text-decoration: none;">About Us</a>&nbsp;&nbsp; <a href="TermsCondition.aspx?UT=V"style="color: #FFFFFF; text-decoration: none;">Conditions of Use &amp; Sale</a>&nbsp;&nbsp; <a href="Help.aspx?UT=V"style="color: #FFFFFF; text-decoration: none;">Help Center</a><br />
+                                <br />
+                                Copyright @ 2020, Shopping Hub, All Rights Reserved<br />
+                                Designed and Developed by Jatin Kumar</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+    </form>
+</body>
+</html>

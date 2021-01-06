@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Seller.master.cs" Inherits="OnlineShoppingManagement.Seller" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Seller Hub</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 96px;
+            border-collapse:collapse;
+
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 11px;
+            border-collapse:collapse;
+           
+        }
+        .auto-style3 {
+            width: 374px;
+            text-align: center;
+        }
+        .auto-style4 {
+            width: 554px;
+        }
+        .auto-style5 {
+            width: 1670px;
+            font-size: large;
+        }
+        .auto-style6 {
+            text-decoration: none;
+        }
+        .auto-style7 {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 224px">
+        <table class="auto-style1" >
+            <tr>
+                <td style="background-color: #3399FF; vertical-align: middle; text-align: center; color: #FFFFFF;" class="auto-style3"><span style="font-size: x-large; text-align: center"><a href="SellerHome.aspx" class="auto-style6"><strong><em><span class="auto-style7">Seller</span><br class="auto-style7" />
+                    <span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hub</span></em></strong></a></span></td>
+                <td style="background-color: #3399FF; vertical-align: middle; text-align: center; color: #FFFFFF;" class="auto-style5">Wellcome to your Seller Account</td>
+                <td style="background-color: #3399FF; vertical-align: middle; text-align: center; color: #FFFFFF;" class="auto-style4">Hello,&nbsp;<a href="ProfileDetails.aspx?UT=S" style="text-decoration: none"><asp:Label ID="lblMessage" runat="server" ForeColor="White" style="text-align: center" ></asp:Label></a>
+                </td>
+                <td style="background-color: #3399FF; vertical-align: middle; text-align: right; color: #FFFFFF;">
+                    <a href="SignOut.aspx" style="color: white; text-decoration: none">LogOut</a></td>
+            </tr>
+        </table>
+        <table class="auto-style2">
+            <tr>
+                    <td style="background-color: #0099FF; color: #FFFFFF; vertical-align: bottom; text-align: center;"><strong style="font-size: large; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="AddProduct.aspx" style="text-decoration:none; color:white">AddProduct</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ViewProduct.aspx" style="text-decoration:none; color:white">ViewProduct</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ViewOrder.aspx"  style="text-decoration:none; color:white">ViewOrder</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="ViewComplaintFeedBack.aspx?UT=S" style="text-decoration:none; color:white">ViewFeedBack</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="ViewPayment.aspx" class="auto-style6"><span class="auto-style7">ViewPayment</span></a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="CancellationDetails.aspx" style="text-decoration:none; color:white">View Cancellation Order</a></strong></td>
+                </tr>
+        </table>
+        <table class="auto-style2">
+            <tr>
+                <td>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    
+                    <table class="auto-style2">
+                        <tr>
+                            <td style="border-style: none; border-color: #FFFFFF; color: #FFFFFF; vertical-align: middle; text-align: center; text-decoration: none; background-color: #3399FF;"><a href="AboutUs.aspx?UT=S"style="color: #FFFFFF; text-decoration: none;">About Us</a>&nbsp;&nbsp; <a href="TermsCondition.aspx?UT=S"style="color: #FFFFFF; text-decoration: none;">Conditions of Use &amp; Sale</a>&nbsp;&nbsp; <a href="Help.aspx?UT=S"style="color: #FFFFFF; text-decoration: none;">Help Center</a><br />
+                                <br />
+                                Copyright @ 2020, Seller Hub, All Rights Reserved<br />
+                                Designed and Developed by Jatin Kumar</td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
